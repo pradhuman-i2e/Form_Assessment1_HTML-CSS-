@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 50px;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    background: #1e1e1e; /* Darker container background */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff; /* White heading */
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    color: #cccccc; /* Light gray labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    background: #2c2c2c; /* Input background */
+    border: 1px solid #444; /* Dark border */
+    border-radius: 5px;
+    color: #ffffff; /* White text */
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 1px solid #4CAF50; /* Green focus border */
+    outline: none;
+}
+
+button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Green submit button */
+    color: white;
+}
+
+button[type="button"] {
+    background-color: #f44336; /* Red cancel button */
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button[type="button"]:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
